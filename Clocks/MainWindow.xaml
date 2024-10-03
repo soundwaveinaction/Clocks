@@ -29,7 +29,8 @@
                          Margin="10" HorizontalContentAlignment="Center"/>
 
                 <Button Content="Задать время" Command="{Binding SetTimeCommand}" Margin="10"  />
-            </StackPanel>
+            <Button Content="Задать текущее время" Command="{Binding SetCurrentTimeCommand}" Margin="10"  />
+        </StackPanel>
 
         <Grid Grid.Column="0">
             <Line Stroke="DarkBlue" StrokeThickness="10" Y2="-100" Y1="0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" HorizontalAlignment="Center" StrokeEndLineCap="Triangle">

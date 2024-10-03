@@ -41,7 +41,9 @@ namespace Clocks
                 return new RelayCommand((obj) =>
                 {
                     userTimeOnly = TimeOnly.MinValue;
-                });
+                },
+                    (obj) => userTimeOnly!=TimeOnly.MinValue
+                );
             }
         }
         public ViewModel()
